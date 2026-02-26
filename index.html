@@ -1,404 +1,415 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>بروفايل المصور</title>
-.packages{display:grid;gap:18px}
-.pack-group{border:1px solid var(--stroke);border-radius:20px;padding:14px;background:#fff}
-.pack-group h3{text-align:center;color:var(--accent);font-weight:900}
-.pack{border:1px solid var(--stroke);border-radius:16px;padding:12px;margin-bottom:12px;background:#faf7f3}
-.price{color:var(--accent);font-weight:900;font-size:18px}
-.badge{background:var(--accent);color:#fff;padding:4px 10px;border-radius:999px;font-size:12px}
-.notes{color:var(--muted);line-height:1.8}
+  <title>Abdulrahman Hassan | Wedding Photographer</title>
   <style>
-  :root{
-  --bg:#f6f1ea;          /* خلفية بيج فاتح */
-  --card:#ffffff;        /* كارت أبيض */
-  --stroke:rgba(0,0,0,.08);
-  --text:#1b1b1b;
-  --muted:rgba(0,0,0,.6);
-  --accent:#b11226;      /* أحمر */
-  --accent2:#e6c9b3;     /* بيج */
-  --btn:#f5efe8;
-  --btnHover:#f1d6c9;
-  --radius:24px;
-}.packages{
-  display:grid;
-  gap:18px;
-}
+    :root{
+      --bg:#f6f1ea;          /* light beige */
+      --card:#ffffff;
+      --stroke:rgba(0,0,0,.10);
+      --text:#1b1b1b;
+      --muted:rgba(0,0,0,.62);
+      --accent:#b11226;      /* red */
+      --accent2:#e6c9b3;     /* beige */
+      --soft:#fbf8f5;
+      --radius:24px;
+    }
 
-.pack-group{
-  border:1px solid var(--stroke);
-  border-radius:20px;
-  padding:14px;
-  background:#fff;
-}
-
-.pack-group h3{
-  margin:0 0 12px;
-  text-align:center;
-  color:var(--accent);
-  font-size:20px;
-  font-weight:1000;
-}
-
-.pack{
-  border:1px solid var(--stroke);
-  border-radius:18px;
-  padding:14px;
-  margin-bottom:12px;
-  background:#faf7f3;
-}
-
-.pack h4{
-  margin:0 0 6px;
-  font-size:18px;
-  font-weight:900;
-}
-
-.pack p{
-  margin:4px 0;
-  font-size:14px;
-  color:var(--muted);
-}
-
-.price{
-  margin-top:8px;
-  font-size:18px;
-  font-weight:1000;
-  color:var(--accent);
-}
-
-.badge{
-  display:inline-block;
-  background:var(--accent);
-  color:#fff;
-  padding:4px 10px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:800;
-  margin-bottom:6px;
-}
-
-.notes{
-  font-size:14px;
-  line-height:1.8;
-  color:var(--muted);
-}
-.notes strong{color:var(--accent)}
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial;
+      font-family: system-ui,-apple-system,"Segoe UI",Arial;
       background:
-        radial-gradient(900px 600px at 70% 0%, rgba(107,92,255,.22), transparent 60%),
-        radial-gradient(900px 600px at 10% 10%, rgba(154,132,255,.14), transparent 55%),
+        radial-gradient(900px 600px at 70% 0%, rgba(177,18,38,.10), transparent 60%),
+        radial-gradient(900px 600px at 10% 10%, rgba(230,201,179,.25), transparent 55%),
         var(--bg);
       color:var(--text);
       min-height:100vh;
       display:flex;
       justify-content:center;
-      padding:24px 14px;
+      padding:22px 14px 92px;
     }
 
-    .app{width:min(430px, 100%);}
+    .app{width:min(430px,100%)}
 
     .top{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding:8px 6px 14px;
+      padding:10px 6px 14px;
     }
-    .top .name{font-weight:900; font-size:18px}
-    .top .sub{color:var(--muted); font-size:12px; letter-spacing:2px; margin-top:6px}
+    .brand .name{font-weight:1000; letter-spacing:.2px}
+    .brand .sub{font-size:12px; color:var(--muted); letter-spacing:2px; margin-top:6px}
+    .icon{
+      width:40px;height:40px;border-radius:14px;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.55);
+      display:flex;align-items:center;justify-content:center;
+      font-size:18px;
+    }
 
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      background: linear-gradient(180deg, rgba(255,255,255,.70), rgba(255,255,255,.92));
       border:1px solid var(--stroke);
       border-radius:var(--radius);
-      box-shadow: 0 20px 60px rgba(0,0,0,.45);
+      box-shadow: 0 18px 55px rgba(0,0,0,.12);
       overflow:hidden;
     }
 
-    .cover{
-      height:170px;
-      background:rgba(255,255,255,.04);
-    }
-    .cover img{
-      width:100%; height:100%;
-      object-fit:cover;
-      filter:saturate(1.1) contrast(1.05);
-    }
+    .cover{height:170px;background:rgba(0,0,0,.03)}
+    .cover img{width:100%;height:100%;object-fit:cover}
 
-    .avatarWrap{
-      display:flex; justify-content:center;
-      margin-top:-46px;
-    }
+    .avatarWrap{display:flex;justify-content:center;margin-top:-44px}
     .avatar{
-      width:96px; height:96px;
-      border-radius:50%;
-      padding:4px;
-      background: radial-gradient(circle at 30% 30%, var(--accent2), var(--accent));
+      width:92px;height:92px;border-radius:50%;
+      padding:4px;background:radial-gradient(circle at 30% 30%, var(--accent2), var(--accent));
     }
     .avatar img{
-      width:100%; height:100%;
-      border-radius:50%;
-      object-fit:cover;
-      border:3px solid rgba(5,7,20,.95);
-      background:#111;
+      width:100%;height:100%;border-radius:50%;object-fit:cover;
+      border:3px solid rgba(246,241,234,.95);
+      background:#eee;
     }
 
     h1{
-      text-align:center;
-      margin:14px 0 4px;
-      font-size:28px;
-      font-weight:1000;
+      text-align:center;margin:14px 0 4px;
+      font-size:28px;font-weight:1000;
     }
     .role{
-      text-align:center;
-      margin:0 0 14px;
-      color:var(--muted);
-      font-weight:700;
+      text-align:center;margin:0 0 14px;
+      color:var(--muted);font-weight:800;
+      text-transform:lowercase;
     }
 
     .chip{
       margin:0 auto 14px;
       width:max-content;
-      padding:8px 14px;
-      border-radius:999px;
-      background:rgba(255,255,255,.03);
-      border:1px solid var(--stroke);
-      color:var(--accent2);
-      font-weight:900;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(177,18,38,.08);
+      border:1px solid rgba(177,18,38,.18);
+      color:var(--accent);font-weight:1000;
     }
 
     .grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-      padding:0 16px 16px;
+      display:grid;grid-template-columns:1fr 1fr;
+      gap:12px;padding:0 16px 16px;
     }
 
     .btn{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
+      display:flex;align-items:center;justify-content:center;gap:10px;
       text-decoration:none;
       color:var(--text);
-      background:rgba(255,255,255,.03);
+      background:rgba(255,255,255,.75);
       border:1px solid var(--stroke);
-      padding:14px 12px;
-      border-radius:18px;
-      font-weight:900;
-      transition:.15s transform, .15s border-color, .15s background;
+      padding:14px 12px;border-radius:18px;
+      font-weight:1000;
+      transition:.15s transform,.15s border-color,.15s background;
     }
     .btn:hover{
-      transform: translateY(-1px);
-      border-color: rgba(107,92,255,.55);
-      background: var(--btnHover);
+      transform:translateY(-1px);
+      border-color:rgba(177,18,38,.35);
+      background:rgba(177,18,38,.06);
     }
+    .btn.primary{
+      background:var(--accent);
+      color:#fff;
+      border-color:rgba(0,0,0,.08);
+    }
+    .btn.primary:hover{background:#971021}
 
     .section{
       border-top:1px solid var(--stroke);
       padding:16px;
     }
     .section .title{
-      color:var(--accent2);
-      font-weight:1000;
+      color:var(--accent);
+      font-weight:1100;
       margin:0 0 10px;
       font-size:16px;
+      letter-spacing:.3px;
+      text-transform:uppercase;
     }
-    .section p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.8;
-      font-weight:600;
-    }
+    .section p{margin:0;color:var(--muted);line-height:1.8;font-weight:700}
 
-    .list{
+    /* Packages layout like Elsugheir: 2 columns then notes */
+    .packages{
       display:grid;
-      gap:10px;
-      margin-top:10px;
+      gap:14px;
+      grid-template-columns:1fr;
     }
+    .pack-group{
+      border:1px solid var(--stroke);
+      border-radius:20px;
+      padding:14px;
+      background:var(--soft);
+    }
+    .pack-group h3{
+      margin:0 0 12px;
+      text-align:center;
+      color:var(--accent);
+      font-size:18px;
+      font-weight:1100;
+    }
+    .pack{
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      padding:12px;
+      margin-bottom:12px;
+      background:#fff;
+      position:relative;
+    }
+    .badge{
+      position:absolute;top:10px;right:10px;
+      background:var(--accent);color:#fff;
+      padding:4px 10px;border-radius:999px;
+      font-size:12px;font-weight:1000;
+    }
+    .pack h4{margin:0 0 6px;font-size:18px;font-weight:1100}
+    .pack .line{margin:4px 0;color:var(--muted);font-weight:800;font-size:14px}
+    .price{margin-top:8px;color:var(--accent);font-weight:1100;font-size:18px}
+
+    .notes{color:var(--muted);line-height:1.8;font-weight:800;font-size:14px}
+    .notes strong{color:var(--text)}
+
+    .list{display:grid;gap:10px;margin-top:8px}
     .item{
+      display:block;
       padding:12px 12px;
       border-radius:16px;
       border:1px solid var(--stroke);
-      background:rgba(255,255,255,.02);
-      color:var(--muted);
-      font-weight:700;
+      background:rgba(255,255,255,.80);
+      color:var(--text);
+      font-weight:900;
+      text-decoration:none;
+    }
+    .item small{display:block;color:var(--muted);font-weight:800;margin-top:4px}
+
+    /* Bottom nav like Elsugheir */
+    .nav{
+      position:fixed;
+      left:0;right:0;bottom:10px;
+      display:flex;
+      justify-content:center;
+      pointer-events:none;
+    }
+    .nav .bar{
+      pointer-events:auto;
+      width:min(430px, calc(100% - 20px));
+      background:rgba(255,255,255,.85);
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      display:flex;
+      gap:10px;
+      padding:10px;
+      box-shadow: 0 18px 55px rgba(0,0,0,.12);
+      backdrop-filter: blur(10px);
+    }
+    .nav a{
+      flex:1;
+      text-align:center;
+      text-decoration:none;
+      padding:10px 8px;
+      border-radius:14px;
+      font-weight:1000;
+      color:var(--text);
+      border:1px solid transparent;
+    }
+    .nav a:hover{
+      border-color:rgba(177,18,38,.25);
+      background:rgba(177,18,38,.06);
     }
 
     .footer{
       padding:14px 16px 18px;
       text-align:center;
-      color:rgba(255,255,255,.35);
+      color:rgba(0,0,0,.45);
       border-top:1px solid var(--stroke);
-      font-weight:700;
+      font-weight:900;
+      font-size:13px;
     }
-
-    /* أيقونات بسيطة */
-    .ico{font-size:18px; line-height:1}
   </style>
 </head>
 
 <body>
   <main class="app">
-    <header class="top">
-      <div>
-        <div class="name">ABDULRAHMAN HASSAN</div>
+    <header class="top" id="profile">
+      <div class="brand">
+        <div class="name">Abdulrahman Hassan</div>
         <div class="sub">WEDDING PHOTOGRAPHER PROFILE</div>
       </div>
-      <div style="opacity:.7">📷</div>
+      <div class="icon">📷</div>
     </header>
 
     <section class="card">
-      <!-- غلاف -->
+      <!-- Cover -->
       <div class="cover">
+        <!-- غيّر الصورة دي بصورة الغلاف بتاعتك -->
         <img src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?auto=format&fit=crop&w=1200&q=60" alt="cover">
       </div>
 
-      <!-- صورة -->
+      <!-- Avatar -->
       <div class="avatarWrap">
         <div class="avatar">
+          <!-- غيّر الصورة دي بصورة بروفايلك -->
           <img src="https://via.placeholder.com/400x400.png?text=Your+Photo" alt="avatar">
         </div>
       </div>
 
-      <h1>ABDULRAHMAN HASSAN</h1>
-      <div class="role">Photographer</div>
+      <h1>Abdulrahman Hassan</h1>
+      <div class="role">photographer</div>
 
-      <div class="chip">تواصل سريع</div>
+      <div class="chip">Quick Contact</div>
 
-      <!-- أزرار التواصل -->
       <div class="grid">
-        <a class="btn" href="https://wa.me/201234567890" target="_blank"><span class="ico">💬</span> واتساب</a>
-        <a class="btn" href="https://instagram.com/" target="_blank"><span class="ico">📷</span> انستجرام</a>
-        <a class="btn" href="https://tiktok.com/" target="_blank"><span class="ico">🎵</span> تيك توك</a>
-        <a class="btn" href="https://facebook.com/" target="_blank"><span class="ico">📘</span> فيسبوك</a>
+        <a class="btn" href="https://wa.me/201090574843" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://instagram.com/USERNAME" target="_blank">Instagram</a>
+        <a class="btn" href="https://facebook.com/USERNAME" target="_blank">Facebook</a>
+        <a class="btn" href="https://tiktok.com/@USERNAME" target="_blank">TikTok</a>
       </div>
 
-      <!-- خانة نبذة -->
       <div class="section">
-        <div class="title">نبذة بسيطة</div>
-        <p>اكتب نبذة قصيرة عنك وخبرتك ونوع التصوير اللي بتقدمه.</p>
-      </div>
-
-      <!-- خانات إضافية -->
-      <div class="section">
-        <div class="title">الخدمات</div>
-        <div class="list">
-          <div class="item">تصوير أفراح + سيشن خارجي</div>
-          <div class="item">تصوير خطوبة</div>
-          <div class="item">تصوير منتجات / محتوى سوشيال</div>
+        <div class="title">About</div>
+        <p>Live wedding coverage + portraits + clean cinematic moments. Fast delivery and consistent editing style.</p>
+        <div style="margin-top:12px; display:flex; justify-content:center;">
+          <a class="btn primary" href="#packages">See Prices</a>
         </div>
       </div>
 
-      <div class="section">
-        <div class="title">الأسعار</div>
-        <div class="list">
-          <div class="item">باكدج 1 — اكتب السعر</div>
-          <div class="item">باكدج 2 — اكتب السعر</div>
-          <div class="item">باكدج 3 — اكتب السعر</div>
+      <!-- PACKAGES -->
+      <div class="section" id="packages">
+        <div class="title">Packages</div>
+        <p>Choose the package that fits your day — and book instantly.</p>
+
+        <div style="height:10px"></div>
+
+        <div class="packages">
+
+          <div class="pack-group">
+            <h3>Photo Only</h3>
+
+            <div class="pack">
+              <h4>Mini Day</h4>
+              <div class="line">Team: 1 Photographer</div>
+              <div class="line">Up to 1–3 hours</div>
+              <div class="line">Single location</div>
+              <div class="price">4000 EGP</div>
+              <div style="margin-top:10px">
+                <a class="btn primary" href="https://wa.me/201090574843" target="_blank">Book on WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="pack">
+              <h4>Half Day</h4>
+              <div class="line">Team: 1 Photographer</div>
+              <div class="line">8 hours coverage</div>
+              <div class="price">6000 EGP</div>
+              <div style="margin-top:10px">
+                <a class="btn primary" href="https://wa.me/201090574843" target="_blank">Book on WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="pack">
+              <span class="badge">Best Value</span>
+              <h4>Full Day</h4>
+              <div class="line">Team: 1 Photographer</div>
+              <div class="line">12 hours coverage</div>
+              <div class="price">8000 EGP</div>
+              <div style="margin-top:10px">
+                <a class="btn primary" href="https://wa.me/201090574843" target="_blank">Book on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pack-group">
+            <h3>Photo + Video</h3>
+
+            <div class="pack">
+              <span class="badge">Limited Offer</span>
+              <h4>Half Day Plus</h4>
+              <div class="line">Team: 1 Photographer + 1 Videographer</div>
+              <div class="line">8 hours coverage</div>
+              <div class="line">4K Highlight Film (Promo Video)</div>
+              <div class="price">10000 EGP</div>
+              <div style="margin-top:10px">
+                <a class="btn primary" href="https://wa.me/201090574843" target="_blank">Book on WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="pack">
+              <span class="badge">Most Popular</span>
+              <h4>Premium Package</h4>
+              <div class="line">Team: 2 Photographers + 1 Videographer</div>
+              <div class="line">12 hours coverage</div>
+              <div class="line">4K Highlight Film (Promo Video)</div>
+              <div class="price">14000 EGP</div>
+              <div style="margin-top:10px">
+                <a class="btn primary" href="https://wa.me/201090574843" target="_blank">Book on WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="pack">
+              <span class="badge">VIP</span>
+              <h4>VIP Package</h4>
+              <div class="line">Team: 3 Photographers + 1 Videographer</div>
+              <div class="line">15 hours coverage</div>
+              <div class="line">4K Highlight Film (Promo Video)</div>
+              <div class="line">1 min Instagram Video + Printed Photos</div>
+              <div class="price">18000 EGP</div>
+              <div style="margin-top:10px">
+                <a class="btn primary" href="https://wa.me/201090574843" target="_blank">Book on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pack-group">
+            <h3>Reservation Notes</h3>
+            <div class="notes">
+              <p><strong>Booking:</strong> Reservation is confirmed by paying a 25% non-refundable deposit via e-wallet.</p>
+              <p><strong>Delivery:</strong></p>
+              <p>• Photos: within 3 days</p>
+              <p>• Videos: within 10–14 days</p>
+              <p><strong>Add-ons:</strong></p>
+              <p>• Extra hour: 1000 EGP</p>
+              <p>• Extra hour (Photo + Video): 1500 EGP</p>
+              <p>• Extra photographer: 2000 EGP</p>
+              <p>• Extra promo video: 4000 EGP</p>
+              <p>• Extra media coverage: 3000 EGP</p>
+              <p><strong>Note:</strong> All packages include unlimited photos. To ensure the best quality, no other photographers are allowed during the formal session.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="section">
-        <div class="title">لينكات مهمة</div>
+      <!-- LINKS -->
+      <div class="section" id="links">
+        <div class="title">Links</div>
+        <p>Quick links for clients.</p>
+
         <div class="list">
-          <a class="item" href="#" target="_blank" style="display:block; text-decoration:none;">بورتفوليو (Google Drive / Behance)</a>
-          <a class="item" href="#" target="_blank" style="display:block; text-decoration:none;">موقع/ألبومات</a>
-          <a class="item" href="#" target="_blank" style="display:block; text-decoration:none;">موقع الحجز</a>
+          <a class="item" href="#" target="_blank">Bride Website <small>Click to open</small></a>
+          <a class="item" href="#" target="_blank">Birthday Website <small>Password: 123</small></a>
+          <a class="item" href="#" target="_blank">Portfolio <small>Drive / Behance / Website</small></a>
+        </div>
+
+        <div style="margin-top:14px; display:flex; gap:10px;">
+          <a class="btn primary" href="https://wa.me/201090574843" target="_blank" style="flex:1">Quick Booking</a>
+          <a class="btn" href="#profile" style="flex:1">Back to Profile</a>
         </div>
       </div>
 
-      <div class="footer">Photographer Profile — 2026 ©</div><!-- ================= PACKAGES ================= -->
-<div class="section">
-  <div class="title">Wedding Packages 2026</div>
-
-  <div class="packages">
-
-    <div class="pack-group">
-      <h3>Photo Only</h3>
-
-      <div class="pack">
-        <h4>Mini Day</h4>
-        <p>Team: 1 Photographer</p>
-        <p>Up to 1–3 hours</p>
-        <p>Single location</p>
-        <div class="price">4000 EGP</div>
-      </div>
-
-      <div class="pack">
-        <h4>Half Day</h4>
-        <p>Team: 1 Photographer</p>
-        <p>8 hours coverage</p>
-        <div class="price">6000 EGP</div>
-      </div>
-
-      <div class="pack">
-        <span class="badge">Best Value</span>
-        <h4>Full Day</h4>
-        <p>Team: 1 Photographer</p>
-        <p>12 hours coverage</p>
-        <div class="price">8000 EGP</div>
-      </div>
-    </div>
-
-    <div class="pack-group">
-      <h3>Photo + Video</h3>
-
-      <div class="pack">
-        <span class="badge">Limited Offer</span>
-        <h4>Half Day Plus</h4>
-        <p>Team: 1 Photographer + 1 Videographer</p>
-        <p>8 hours coverage</p>
-        <p>4K Highlight Film</p>
-        <div class="price">10000 EGP</div>
-      </div>
-
-      <div class="pack">
-        <span class="badge">Most Popular</span>
-        <h4>Premium Package</h4>
-        <p>Team: 2 Photographers + 1 Videographer</p>
-        <p>12 hours coverage</p>
-        <p>4K Highlight Film</p>
-        <div class="price">14000 EGP</div>
-      </div>
-
-      <div class="pack">
-        <span class="badge">VIP</span>
-        <h4>VIP Package</h4>
-        <p>Team: 3 Photographers + 1 Videographer</p>
-        <p>15 hours coverage</p>
-        <p>4K Highlight Film</p>
-        <p>Instagram video + Printed Photos</p>
-        <div class="price">18000 EGP</div>
-      </div>
-    </div>
-
-    <div class="pack-group">
-      <h3>Reservation Notes</h3>
-      <div class="notes">
-        <p><strong>Booking:</strong> 25% non-refundable deposit.</p>
-        <p><strong>Delivery:</strong></p>
-        <p>• Photos: within 3 days</p>
-        <p>• Videos: within 10–14 days</p>
-        <p><strong>Add-ons:</strong></p>
-        <p>• Extra hour: 1000 EGP</p>
-        <p>• Extra hour (photo + video): 1500 EGP</p>
-        <p>• Extra photographer: 2000 EGP</p>
-        <p>• Extra promo video: 4000 EGP</p>
-        <p>• Extra media coverage: 3000 EGP</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-<!-- ================= END PACKAGES ================= -->
+      <div class="footer">© 2026 — Abdulrahman Hassan</div>
     </section>
   </main>
+
+  <!-- Bottom navigation -->
+  <div class="nav">
+    <div class="bar">
+      <a href="#profile">Profile</a>
+      <a href="#packages">Prices</a>
+      <a href="#links">Links</a>
+    </div>
+  </div>
 </body>
 </html>
